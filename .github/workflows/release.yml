@@ -11,15 +11,12 @@ on:
   push:
     tags: [ '*' ]
 
-permissions:
-  contents: write
-
 jobs:
   build:
 
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
